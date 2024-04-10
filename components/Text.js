@@ -1,11 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import React from "react";
+import { Text } from "react-native";
+import { styles } from "../styles/Style";
 
-export default function Text() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Text = ({ children, style }) => {
+  return <Text style={[styles.text, style]}>{children}</Text>;
+};
+
+export default Text;
