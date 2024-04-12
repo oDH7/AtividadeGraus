@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     marginBottom: 10,
+    color: "red",
   },
   input: {
     borderWidth: 1,
@@ -20,7 +21,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: "red",
+    backgroundColor: "black",
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
