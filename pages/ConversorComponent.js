@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { View } from 'react-native';
-import TextComponent from '../components/TextComponent';
-import TextInputComponent from '../components/TextInputComponent';
-import ButtonComponent from '../components/ButtonComponent';
-import { styles } from '../styles/Style';
+import React, { useState } from "react";
+import { View } from "react-native";
+import TextComponent from "../components/TextComponent";
+import TextInputComponent from "../components/TextInputComponent";
+import ButtonComponent from "../components/ButtonComponent";
+import { styles } from "../styles/Style";
 
 export default function ConversorComponent() {
-  const [celsius, setCelsius] = useState('');
-  const [fahrenheit, setFahrenheit] = useState('');
+  const [celsius, setCelsius] = useState("");
+  const [fahrenheit, setFahrenheit] = useState("");
 
   const Convert = () => {
-    if (celsius !== '' && !isNaN(celsius)) {
-      const result = (parseFloat(celsius) * 9/5) + 32;
+    if (celsius !== "" && !isNaN(celsius)) {
+      const result = (parseFloat(celsius) * 9) / 5 + 32;
       setFahrenheit(result.toFixed(2));
     }
   };
 
   const Clear = () => {
-    setCelsius('');
-    setFahrenheit('');
+    setCelsius("");
+    setFahrenheit("");
   };
 
   return (
